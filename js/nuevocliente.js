@@ -1,3 +1,5 @@
+import { mostrarAlerta } from './funciones.js'
+
 
 (function () {
     const formulario = document.querySelector('#formulario')
@@ -14,8 +16,8 @@
         const cliente = { nombre, email, telefono, empresa }
 
         !validar(cliente)
-            ? console.log('todos los espacios son obligatorios')
-            : console.log('correcto')
+            ? mostrarAlerta('todos los espacios son obligatorios')
+            : console.log('paso la validacion')
     }
     //metodo para validar
     const validar = obj => Object.values(obj).every(input => input != '')
