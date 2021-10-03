@@ -1,4 +1,5 @@
 import { mostrarAlerta } from './funciones.js'
+import { nuevoCliente } from './API.js'
 
 
 (function () {
@@ -17,7 +18,7 @@ import { mostrarAlerta } from './funciones.js'
 
         !validar(cliente)
             ? mostrarAlerta('todos los espacios son obligatorios')
-            : console.log('paso la validacion')
+            : nuevoCliente(cliente)
     }
     //metodo para validar
     const validar = obj => Object.values(obj).every(input => input != '')
