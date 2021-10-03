@@ -6,6 +6,20 @@
       "telefono": "12",
       "empresa": "12212",
       "id": 26
+    },
+    {
+      "nombre": "bran",
+      "email": "jairo.padilla.deb19@gmail.com",
+      "telefono": "+59162744050",
+      "empresa": "developers.sr",
+      "id": 27
+    },
+    {
+      "nombre": "bran2",
+      "email": "201706595@est.umss.edu",
+      "telefono": "+59162744050",
+      "empresa": "developers.sr",
+      "id": 28
     }
   ]
 }
