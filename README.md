@@ -7,4 +7,4 @@
 > - JavaScript
 
 ## 💾 Features
-> - a crm with crud and rest
+> - a crm with crud and rest api in JSON server
