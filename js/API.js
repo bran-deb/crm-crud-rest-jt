@@ -49,3 +49,19 @@ export const obtenerCliente = async id => {
         console.log(e)
     }
 }
+
+//actualiza un registro
+export const editarCliente = async cliente => {
+    try {
+        await fetch(`${url}/${cliente.id}`, {       //le pasamos el id del cliente a editar
+            method: 'PUT',
+            body: JSON.stringify(cliente),
+            headers: {
+                'Content-Type': 'application/json'
+            }
+        })
+        window.location.href = 'index.html'     //despues de crear un nuevo cliente vamos al index
+    } catch (e) {
+        console.log(e)
+    }
+}

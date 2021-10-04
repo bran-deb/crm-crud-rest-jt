@@ -16,3 +16,6 @@ export function mostrarAlerta(mensaje) {
         }, 3000);
     }
 }
+
+//metodo para validar
+export const validar = obj => Object.values(obj).every(input => input != '')
